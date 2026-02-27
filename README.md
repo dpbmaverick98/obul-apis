@@ -41,7 +41,7 @@ curl -s -X POST "https://proxy.obul.ai/proxy/https/firecrawl.x402endpoints.com/v
 This repo is also a Claude Code plugin. Add it as a marketplace and install:
 
 ```sh
-claude plugin marketplace add /path/to/obul-skills
+claude plugin marketplace add https://github.com/obulai/obul-plugin.git
 claude plugin install obul
 ```
 
