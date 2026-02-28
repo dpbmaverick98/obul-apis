@@ -19,13 +19,18 @@ Obul is the **universal API gateway for the agent economy**. It proxies requests
    ```
    All requests must include the `x-obul-api-key` header.
 
-## Available Skills
+## Plugin Categories
 
-| | Skill | Description |
-|---|---|---|
-| 🔥 | [firecrawl](skills/firecrawl/SKILL.md) | Web scraping, crawling, site mapping, search, and structured extraction |
-| 🔗 | [obul-proxy](skills/obul-proxy/SKILL.md) | Proxy x402 requests through Obul with automatic payment handling |
-| 🔍 | [x-search](skills/x-search/SKILL.md) | X/Twitter search, user profiles, and trending topics |
+| | Category | Plugin | Skills |
+|---|---|---|---|
+| 🔗 | Infrastructure | [obul-core](plugins/obul-core/) | obul-proxy, pinata, cnvrting |
+| 🔥 | Web Scraping | [obul-scrape](plugins/obul-scrape/) | firecrawl, browserbase, zyte, minifetch, x402engine-web |
+| 🔍 | Web Search | [obul-search](plugins/obul-search/) | firecrawl-search, exa |
+| 🐦 | Social Media | [obul-social](plugins/obul-social/) | x-search, neynar, reddit |
+| 💰 | Blockchain/DeFi | [obul-crypto](plugins/obul-crypto/) | coingecko, heyelsa, zapper, slamai, silverback, blocksec, x402engine-chain, ordiscan |
+| 🎨 | Media | [obul-media](plugins/obul-media/) | freepik, x402engine-image, x402engine-audio, dtelecom, aibeats, genbase |
+| 🛡️ | Security & Risk | [obul-security](plugins/obul-security/) | orac, blackswan |
+| 👤 | Lead Enrichment | [obul-leads](plugins/obul-leads/) | stableenrich |
 
 ## Usage Example
 
@@ -38,16 +43,31 @@ curl -s -X POST "https://proxy.obul.ai/proxy/https/firecrawl.x402endpoints.com/v
 
 ## Claude Code Plugin
 
-This repo is also a Claude Code plugin. Add it as a marketplace and install:
+This repo is a Claude Code plugin marketplace. Add it and install all plugins:
 
 ```sh
 claude plugin marketplace add https://github.com/obulai/obul-plugin.git
-claude plugin install obul
+claude plugin install obul-core obul-scrape obul-search obul-social obul-crypto obul-media obul-security obul-leads
 ```
 
-Available commands: `/obul:scrape`, `/obul:search`, `/obul:x-search`, `/obul:proxy`
+### Commands
 
-See [PLUGIN.md](PLUGIN.md) for full details.
+| Command | Plugin | Description | Cost |
+|---------|--------|-------------|------|
+| `/obul-core:proxy <url>` | core | Proxy any request to an x402 endpoint | Varies |
+| `/obul-scrape:scrape <url>` | scrape | Scrape a webpage | $0.001 |
+| `/obul-scrape:screenshot <url>` | scrape | Screenshot a webpage | $0.01 |
+| `/obul-search:search <query>` | search | Search the web | $0.002 |
+| `/obul-social:x-search <query>` | social | Search X/Twitter | $0.001 |
+| `/obul-social:farcaster <query>` | social | Search Farcaster | $0.01 |
+| `/obul-crypto:price <coin>` | crypto | Get crypto prices | $0.01 |
+| `/obul-crypto:wallet <address>` | crypto | Look up wallet info | $0.001 |
+| `/obul-media:imagine <prompt>` | media | Generate an image | $0.015+ |
+| `/obul-media:transcribe <file>` | media | Transcribe audio or generate speech | $0.01+ |
+| `/obul-security:audit <target>` | security | Security analysis | $0.005+ |
+| `/obul-leads:enrich <query>` | leads | People/company enrichment & lead discovery | $0.02+ |
+
+See [PLUGIN.md](PLUGIN.md) for full installation and usage details.
 
 ## Resources
 

@@ -1,0 +1,10 @@
+{
+  "name": "obul-media",
+  "version": "0.2.1",
+  "description": "Image gen, video gen, music gen, TTS, and transcription — Freepik, FLUX, Genbase Sora, AI Beats, dTelecom STT, OpenAI TTS.",
+  "author": { "name": "Obul", "url": "https://obul.ai" },
+  "homepage": "https://obul.ai",
+  "repository": "https://github.com/obulai/obul-plugin",
+  "license": "MIT",
+  "keywords": ["image-generation", "video-generation", "music", "tts", "transcription", "audio", "flux", "freepik", "sora"]
+}

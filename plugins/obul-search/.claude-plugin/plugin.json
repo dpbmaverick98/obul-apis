@@ -1,0 +1,10 @@
+{
+  "name": "obul-search",
+  "version": "0.2.1",
+  "description": "Web search services — Firecrawl search and Exa neural search.",
+  "author": { "name": "Obul", "url": "https://obul.ai" },
+  "homepage": "https://obul.ai",
+  "repository": "https://github.com/obulai/obul-plugin",
+  "license": "MIT",
+  "keywords": ["search", "web-search", "neural-search", "exa", "firecrawl"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "obul-social",
+  "version": "0.2.1",
+  "description": "Social media data — X/Twitter search & profiles, Farcaster via Neynar, Reddit search & comments.",
+  "author": { "name": "Obul", "url": "https://obul.ai" },
+  "homepage": "https://obul.ai",
+  "repository": "https://github.com/obulai/obul-plugin",
+  "license": "MIT",
+  "keywords": ["twitter", "x", "farcaster", "reddit", "social-media", "neynar"]
+}

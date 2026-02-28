@@ -4,20 +4,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-A collection of Obul skill definitions — Markdown files that describe pay-per-use API integrations routed through the Obul proxy (`proxy.obul.ai`). Each skill wraps an external service's x402 API so that agents can call it with just an `OBUL_API_KEY`.
+The **Obul Plugin Marketplace** — a collection of Claude Code plugins providing pay-per-use API access to x402 services through the Obul proxy (`proxy.obul.ai`). Each plugin bundles related skills by category. Each skill wraps an external service's x402 API so that agents can call it with just an `OBUL_API_KEY`.
 
 There is no application code, no build system, no tests. The repo is documentation only.
 
 ## Repository Structure
 
 ```
-registry.md              # Registry reference and publishing guide
-skills/
-  <service-name>/
-    SKILL.md          # The skill definition file
+.claude-plugin/marketplace.json       # Marketplace manifest (lists all 8 plugins)
+registry.md                           # Registry reference and publishing guide
+plugins/
+  <plugin-name>/                      # Category plugin (e.g., obul-scrape, obul-search)
+    .claude-plugin/plugin.json        # Plugin manifest
+    skills/
+      <service-name>/
+        SKILL.md                      # Skill definition file
+    commands/
+      <command>.md                    # User-invocable slash commands
+    rules/
+      setup.md                        # Auth setup rule (shared)
 ```
 
-Each service gets its own folder under `skills/` containing a single `SKILL.md`.
+### Plugin Categories
+
+| Plugin | Category | Skills |
+|--------|----------|--------|
+| `obul-core` | Infrastructure | obul-proxy, pinata, cnvrting |
+| `obul-scrape` | Web scraping | firecrawl, browserbase, zyte, minifetch, x402engine-web |
+| `obul-search` | Web search | firecrawl-search, exa |
+| `obul-social` | Social media | x-search, neynar, reddit |
+| `obul-crypto` | Blockchain/DeFi | coingecko, heyelsa, zapper, slamai, silverback, blocksec, x402engine-chain, ordiscan |
+| `obul-media` | Image/Audio/Video | freepik, x402engine-image, x402engine-audio, dtelecom, aibeats, genbase |
+| `obul-security` | Security/Risk | orac, blackswan |
+| `obul-leads` | Lead Enrichment | stableenrich |
 
 ## Skill File Format
 
@@ -49,4 +68,4 @@ Every `SKILL.md` follows this structure:
 
 Reference guide: https://github.com/dpbmaverick98/Agent_Army_Skills/blob/main/Agent_Army_Skills_Obul/how-to-write-obul-skills.md
 
-Workflow: (1) Research the service's x402 API thoroughly via web search, (2) use an existing skill under `skills/` as a template, (3) create `skills/<service-name>/SKILL.md`.
+Workflow: (1) Research the service's x402 API thoroughly via web search, (2) use an existing skill under `plugins/<category>/skills/` as a template, (3) create `plugins/<category>/skills/<service-name>/SKILL.md`.
