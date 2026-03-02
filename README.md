@@ -37,6 +37,14 @@ Obul is the **universal API gateway for the agent economy**. It proxies requests
 
 Need help finding the right API? Use the **API Finder** skill to search, browse, and install skills directly from this catalog.
 
+### Quick Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/dpbmaverick98/obul-apis/main/skills/obul-api-finder/install.sh | bash
+```
+
+### Usage
+
 ```bash
 # Search for an API by keyword
 node skills/obul-api-finder/scripts/search.js "scrape website"
