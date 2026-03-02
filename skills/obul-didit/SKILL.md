@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/didit`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/didit`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Screen individuals or companies against global watchlists and high-risk database
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/aml",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/aml",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -65,7 +65,7 @@ Send a one-time verification code to an email address.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/email/send",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/email/send",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -85,7 +85,7 @@ Verify a code sent to an email address.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/email/check",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/email/check",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -106,7 +106,7 @@ Send a one-time verification code to a phone number.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/phone/send",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/phone/send",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -129,7 +129,7 @@ Verify a one-time code sent to a phone number.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/phone/check",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/phone/check",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -150,7 +150,7 @@ Validate identity data against authoritative national and global sources.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/didit/v3/database-validation",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/didit/v3/database-validation",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/zai`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/zai`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Create chat completion with GLM models.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/chat/completions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/chat/completions",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -68,7 +68,7 @@ Generate images from text prompts using CogView.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/images/generations",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/images/generations",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -91,7 +91,7 @@ Generate videos from text or images using CogVideoX.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/videos/generations",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/videos/generations",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -114,7 +114,7 @@ Search the web for AI-powered results.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/web_search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/web_search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -137,7 +137,7 @@ Read and parse content from URLs.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/reader",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/reader",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -160,7 +160,7 @@ Upload auxiliary files for translation or other purposes.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/paas/v4/files",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/paas/v4/files",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -183,7 +183,7 @@ Use the general translation API for multilingual translation.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/zai/api/v1/agents",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/zai/api/v1/agents",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

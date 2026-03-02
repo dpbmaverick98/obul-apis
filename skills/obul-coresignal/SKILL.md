@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Look up a company by website domain and get full cleaned company profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_clean/enrich?website=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_clean/enrich?website=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ Search for companies using filters like name, industry, country, and employee co
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_base/search/filter",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_base/search/filter",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -83,7 +83,7 @@ Search for professionals using filters like name, headline, location, skills, an
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_base/search/filter",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_base/search/filter",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -105,7 +105,7 @@ Get full employee profile by ID from search results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_base/collect/374311229",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_base/collect/374311229",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -124,7 +124,7 @@ Get full company profile by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_base/collect/4744382",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_base/collect/4744382",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -141,7 +141,7 @@ Search for job listings using filters like title, location, and employment type.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/job_base/search/filter",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/job_base/search/filter",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -163,7 +163,7 @@ Get most comprehensive company profile aggregated from multiple sources.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_multi_source/enrich?website=google.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_multi_source/enrich?website=google.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -180,7 +180,7 @@ Search for professional network posts using filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_post/search/filter",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_post/search/filter",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -201,7 +201,7 @@ Preview employee search results with summary data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_base/search/filter/preview",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_base/search/filter/preview",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -223,7 +223,7 @@ Preview company search results with summary data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_base/search/filter/preview",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_base/search/filter/preview",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -245,7 +245,7 @@ Preview job search results with summary data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/job_base/search/filter/preview",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/job_base/search/filter/preview",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -267,7 +267,7 @@ Get a full professional network post by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_post/collect/7431869637207928834",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_post/collect/7431869637207928834",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -284,7 +284,7 @@ Get cleaned, deduplicated employee profile by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_clean/collect/374311229",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_clean/collect/374311229",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -301,7 +301,7 @@ Get cleaned, deduplicated company profile by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_clean/collect/4744382",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_clean/collect/4744382",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -318,7 +318,7 @@ Get employee profile by professional network URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_base/collect/https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsundarpichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_base/collect/https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsundarpichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -335,7 +335,7 @@ Get company profile by professional network URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_base/collect/https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoogle",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_base/collect/https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoogle",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -352,7 +352,7 @@ Get comprehensive employee profile from multiple sources.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/employee_multi_source/collect/374311229",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/employee_multi_source/collect/374311229",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -369,7 +369,7 @@ Get comprehensive company profile by professional network URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/company_multi_source/collect/https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoogle",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/company_multi_source/collect/https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoogle",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -386,7 +386,7 @@ Get full job listing by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/coresignal/v2/job_base/collect/406480270",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/coresignal/v2/job_base/collect/406480270",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

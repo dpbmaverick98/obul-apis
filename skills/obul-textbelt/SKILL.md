@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/textbelt`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/textbelt`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Send an SMS message.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/textbelt/text",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/textbelt/text",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -66,7 +66,7 @@ Check the delivery status of a sent SMS.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/textbelt/status/{id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/textbelt/status/{id}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

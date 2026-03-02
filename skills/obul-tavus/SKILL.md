@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/tavus`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/tavus`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Get a list of all available personas.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavus/v2/personas",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavus/v2/personas",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -62,7 +62,7 @@ Start a real-time video conversation with an AI replica.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavus/v2/conversations",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavus/v2/conversations",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

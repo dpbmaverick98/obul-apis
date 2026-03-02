@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Search for people by company, role, geography, and name with natural language qu
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -64,7 +64,7 @@ Enrich a person by email, phone, or social media URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/enrichment",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/enrichment",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -85,7 +85,7 @@ Enrich a company by email, phone, or LinkedIn URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/enrichment",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/enrichment",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -105,7 +105,7 @@ Search for companies by industry or keyword.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -127,7 +127,7 @@ Get social media newsfeed from LinkedIn, Twitter, Instagram, GitHub, or Facebook
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/newsfeed",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/newsfeed",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -147,7 +147,7 @@ Retrieve interests, skills, and topics a person engages with.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/interests",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/interests",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -167,7 +167,7 @@ Find all social media profiles associated with a person.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/social-profiles",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/social-profiles",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -187,7 +187,7 @@ Find people who attended specific events.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/events",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/events",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -208,7 +208,7 @@ Get company funding history and investment details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/funding",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/funding",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -229,7 +229,7 @@ Find investors and funders associated with a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/funders",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/funders",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -250,7 +250,7 @@ Get social media interactions for a person.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/interactions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/interactions",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -271,7 +271,7 @@ Lookup a single social media profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/person/single-social-lookup",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/person/single-social-lookup",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -292,7 +292,7 @@ Check if a company sells a specific product/service.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/checkseller",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/checkseller",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -313,7 +313,7 @@ Analyze company needs based on content.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nyne/v1/company/needs",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nyne/v1/company/needs",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/openmart`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/openmart`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Search local businesses by natural language query with 22+ filter categories.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/openmart/api/v1/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/openmart/api/v1/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -62,7 +62,7 @@ Enrich a company by website URL or social media link.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/openmart/api/v1/enrich_company",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/openmart/api/v1/enrich_company",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -82,7 +82,7 @@ Fetch full business records by openmart_id or google_place_id.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/openmart/api/v1/business_records/list/openmart_id?ids=id1,id2",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/openmart/api/v1/business_records/list/openmart_id?ids=id1,id2",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -99,7 +99,7 @@ Lightweight search returning only business IDs for quick discovery.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/openmart/api/v1/search/only_ids",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/openmart/api/v1/search/only_ids",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

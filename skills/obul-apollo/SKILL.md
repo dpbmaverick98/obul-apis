@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Enrich a company by domain. Returns industry, revenue, employee count, funding, 
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/organizations/enrich",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/organizations/enrich",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -65,7 +65,7 @@ Search Apollo database for people matching filters. Returns up to 100 results pe
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/mixed_people/api_search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/mixed_people/api_search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -90,7 +90,7 @@ Search Apollo database for companies matching filters.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/mixed_companies/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/mixed_companies/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -115,7 +115,7 @@ Enrich a person by email, LinkedIn URL, name+company, or other identifiers.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/people/match",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/people/match",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -139,7 +139,7 @@ Get current job postings for a company by Apollo organization ID.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/organizations/{organization_id}/job_postings",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/organizations/{organization_id}/job_postings",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -158,7 +158,7 @@ Get complete organization information by Apollo organization ID.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/organizations/{id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/organizations/{id}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -180,7 +180,7 @@ Search for news articles related to companies in the Apollo database.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/news_articles/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/news_articles/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -205,7 +205,7 @@ Enrich up to 10 organizations in a single request.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/organizations/bulk_enrich",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/organizations/bulk_enrich",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -227,7 +227,7 @@ Enrich up to 10 people in a single request. Requires webhook for async results.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/apollo/api/v1/people/bulk_match",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/apollo/api/v1/people/bulk_match",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Find the most likely email address for a person given their name and company dom
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/email-finder",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/email-finder",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -67,7 +67,7 @@ Verify if an email address is deliverable.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/email-verifier",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/email-verifier",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -89,7 +89,7 @@ Find all email addresses for a domain.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/domain-search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/domain-search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -112,7 +112,7 @@ Get detailed company information from a domain.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/companies/find",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/companies/find",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -134,7 +134,7 @@ Get count of email addresses for a domain, broken down by department and seniori
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/email-count",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/email-count",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -156,7 +156,7 @@ Get both person AND company information from an email address in a single reques
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/combined/find",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/combined/find",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -178,7 +178,7 @@ Get detailed person information from an email address.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/people/find",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/people/find",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -200,7 +200,7 @@ Find companies matching criteria using filters or natural language.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/hunter/v2/discover",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/hunter/v2/discover",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

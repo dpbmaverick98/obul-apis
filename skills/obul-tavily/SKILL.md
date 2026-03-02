@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Execute a search query using Tavily Search.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -68,7 +68,7 @@ Graph-based website traversal with intelligent discovery.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily/crawl",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily/crawl",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -92,7 +92,7 @@ Extract web page content from specific URLs.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily/extract",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily/extract",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -115,7 +115,7 @@ Traverse websites like a graph to generate comprehensive site maps.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily/map",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily/map",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -139,7 +139,7 @@ Comprehensive research with multiple searches and synthesis.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tavily/research",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tavily/research",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

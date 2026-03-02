@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Extract content from a webpage using AI with a natural language prompt.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/smartscraper",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/smartscraper",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -63,7 +63,7 @@ Start an AI-powered web search request.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/searchscraper",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/searchscraper",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -83,7 +83,7 @@ Convert any webpage into clean, readable Markdown format.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/markdownify",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/markdownify",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -103,7 +103,7 @@ Extract all URLs from a website sitemap.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/sitemap",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/sitemap",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -123,7 +123,7 @@ Extract raw HTML content with JavaScript rendering support.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/scrape",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/scrape",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -144,7 +144,7 @@ Start a web crawl with AI extraction or markdown conversion.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/crawl",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/crawl",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -166,7 +166,7 @@ Check status and retrieve SmartScraper results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/smartscraper/{request_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/smartscraper/{request_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -183,7 +183,7 @@ Check status and retrieve SearchScraper results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/searchscraper/{request_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/searchscraper/{request_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -200,7 +200,7 @@ Check status and retrieve Markdownify results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/markdownify/{request_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/markdownify/{request_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -217,7 +217,7 @@ Check status and retrieve Sitemap results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/sitemap/{request_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/sitemap/{request_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -234,7 +234,7 @@ Check status and retrieve crawl results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapegraph/v1/crawl/{task_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapegraph/v1/crawl/{task_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

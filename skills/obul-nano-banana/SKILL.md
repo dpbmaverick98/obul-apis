@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/nano-banana`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/nano-banana`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Generate images from text prompts using Gemini 2.5 Flash Image.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nano-banana/v1beta/models/gemini-2.5-flash-image:generateContent",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nano-banana/v1beta/models/gemini-2.5-flash-image:generateContent",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -70,7 +70,7 @@ High-quality image generation with thinking capabilities using Gemini 3 Pro.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nano-banana/v1beta/models/gemini-3-pro-image-preview:generateContent",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nano-banana/v1beta/models/gemini-3-pro-image-preview:generateContent",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -100,7 +100,7 @@ List all available Gemini models with their capabilities.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/nano-banana/v1beta/models",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/nano-banana/v1beta/models",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

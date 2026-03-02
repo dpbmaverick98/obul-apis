@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/perplexity`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/perplexity`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Generate AI responses with web search integration and citations.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/perplexity/chat/completions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/perplexity/chat/completions",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -68,7 +68,7 @@ Get ranked search results from Perplexity's index with filtering.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/perplexity/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/perplexity/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -91,7 +91,7 @@ Create asynchronous chat completion job for long-running requests.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/perplexity/async/chat/completions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/perplexity/async/chat/completions",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

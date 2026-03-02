@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/jina-s`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/jina-s`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Search the web and get SERP (Search Engine Results Page) results.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/jina-s/",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/jina-s/",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

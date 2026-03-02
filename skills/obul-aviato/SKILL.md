@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Enrich a company with full details using any identifier (website, LinkedIn URL, 
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/enrich?website=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/enrich?website=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ Search for companies using Aviato's DSL query language.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -85,7 +85,7 @@ Enrich a person with full profile details using any identifier.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/enrich?linkedinURL=https://linkedin.com/in/sundarpichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/enrich?linkedinURL=https://linkedin.com/in/sundarpichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -102,7 +102,7 @@ Search for people using Aviato's DSL query language.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -129,7 +129,7 @@ Retrieve all funding rounds for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/funding-rounds?id=aviato-company-id&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/funding-rounds?id=aviato-company-id&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -146,7 +146,7 @@ Retrieve employees of a company with pagination.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/employees?id=aviato-company-id&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/employees?id=aviato-company-id&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -163,7 +163,7 @@ Retrieve email addresses for a person.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/email?linkedinURL=https://linkedin.com/in/sundarpichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/email?linkedinURL=https://linkedin.com/in/sundarpichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -180,7 +180,7 @@ Retrieve founders of a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/founders?id=aviato-company-id&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/founders?id=aviato-company-id&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -197,7 +197,7 @@ Retrieve posts from a company's LinkedIn page.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/social/company/posts?linkedinNumID=1441",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/social/company/posts?linkedinNumID=1441",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -214,7 +214,7 @@ Generate a market map to find similar companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/marketmap/generate",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/marketmap/generate",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -235,7 +235,7 @@ Simplified person search with pre-defined query parameters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/simple/search?fullName=John+Doe&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/simple/search?fullName=John+Doe&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -252,7 +252,7 @@ Get investments made into the specified company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/investments?website=stripe.com&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/investments?website=stripe.com&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -269,7 +269,7 @@ Get outbound investments that a company has made.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/investments/outbound?website=stripe.com&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/investments/outbound?website=stripe.com&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -286,7 +286,7 @@ Get funds that a company has raised.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/funds?website=stripe.com&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/funds?website=stripe.com&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -303,7 +303,7 @@ Get companies acquired by the specified company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/acquisitions?website=stripe.com&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/acquisitions?website=stripe.com&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -320,7 +320,7 @@ Get vestings of a person.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/vestings?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/vestings?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -337,7 +337,7 @@ Get companies that a person has invested in.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/investments/companies?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/investments/companies?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -354,7 +354,7 @@ Get companies that a person has founded.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/founded-companies?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/founded-companies?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -371,7 +371,7 @@ Get posts from a person's LinkedIn profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/social/person/posts?linkedinID=AC123456",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/social/person/posts?linkedinID=AC123456",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -388,7 +388,7 @@ Get reactions for a LinkedIn post.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/reactions?page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/reactions?page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -405,7 +405,7 @@ Get comments for a LinkedIn post.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/comments?page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/comments?page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -422,7 +422,7 @@ Get reshares for a LinkedIn post.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/reshares?page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/social/post/urn:li:activity:1234567890123456789/reshares?page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -439,7 +439,7 @@ Get individual funds that a company has invested in.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/company/investments/funds?website=sequoiacap.com&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/company/investments/funds?website=sequoiacap.com&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -456,7 +456,7 @@ Get funds that a person has invested in.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/person/investments/funds?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/person/investments/funds?linkedinURL=https://linkedin.com/in/sundarpichai&page=1&perPage=10",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -473,7 +473,7 @@ Search for a location and get geocoded matches.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/aviato/geocoder/search?text=San+Francisco",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/aviato/geocoder/search?text=San+Francisco",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

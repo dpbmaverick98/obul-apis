@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Given an email address, find someone's LinkedIn profile and personal details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/email-to-person/single",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/email-to-person/single",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -60,7 +60,7 @@ Check if an email is likely to bounce using waterfall strategies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/validate-email/single",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/validate-email/single",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -80,7 +80,7 @@ Search for a person using multiple parameters for best match accuracy.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/kitchen-sink/person",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/kitchen-sink/person",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -102,7 +102,7 @@ Get enriched profile details from a LinkedIn profile URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/linkedin-live-fetch/profile/single",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/linkedin-live-fetch/profile/single",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -122,7 +122,7 @@ Search for companies using filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/company-search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/company-search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -144,7 +144,7 @@ Get enriched company details from LinkedIn.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/linkedin-live-fetch/company/single",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/linkedin-live-fetch/company/single",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -165,7 +165,7 @@ Search companies using natural language queries.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/natural-language-search/companies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/natural-language-search/companies",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -185,7 +185,7 @@ Fetch recent posts from a LinkedIn profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/linkedin-live-fetch/profile-posts",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/linkedin-live-fetch/profile-posts",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -205,7 +205,7 @@ Search for people using filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/people-search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/people-search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -228,7 +228,7 @@ Search people using natural language queries.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/natural-language-search/profiles",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/natural-language-search/profiles",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -248,7 +248,7 @@ Fetch comments from a LinkedIn post.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/linkedin-live-fetch/post-comments",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/linkedin-live-fetch/post-comments",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -268,7 +268,7 @@ Fetch reactions from a LinkedIn post.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/linkedin-live-fetch/post-reactions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/linkedin-live-fetch/post-reactions",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -288,7 +288,7 @@ Convert natural language to company search filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/text-to-search-params/companies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/text-to-search-params/companies",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -308,7 +308,7 @@ Convert natural language to person search filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/text-to-search-params/profiles",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/text-to-search-params/profiles",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -328,7 +328,7 @@ Search for job postings.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/job-search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/job-search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -351,7 +351,7 @@ Search for a company using multiple parameters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/kitchen-sink/company",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/kitchen-sink/company",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -372,7 +372,7 @@ Search for investors.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/fiber/v1/investor-search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/fiber/v1/investor-search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

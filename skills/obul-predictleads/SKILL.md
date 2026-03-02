@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Get company profile by ID or domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ Get current job openings for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/job_openings",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/job_openings",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -74,7 +74,7 @@ Search and filter job openings across all companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/job_openings?location=San+Francisco",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/job_openings?location=San+Francisco",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -91,7 +91,7 @@ Get funding/financing events for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/financing_events",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/financing_events",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -108,7 +108,7 @@ Search and filter financing events across all companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/financing_events",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/financing_events",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -125,7 +125,7 @@ Get news events for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/news_events",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/news_events",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -142,7 +142,7 @@ Get technology detections for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/technology_detections",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/technology_detections",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -159,7 +159,7 @@ Find companies similar to a given company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/similar_companies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/similar_companies",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -176,7 +176,7 @@ Search and filter companies by location and size.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/companies?location=USA&sizes=11-50",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/companies?location=USA&sizes=11-50",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -193,7 +193,7 @@ Get products associated with a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/products",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/products",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -210,7 +210,7 @@ Get a single job opening by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/job_openings/{id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/job_openings/{id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -227,7 +227,7 @@ List all tracked technologies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/technologies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/technologies",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -244,7 +244,7 @@ Get a single news event by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/news_events/{id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/news_events/{id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -261,7 +261,7 @@ Get a single product by ID.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/products/{id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/products/{id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -278,7 +278,7 @@ Get GitHub repositories associated with a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/github_repositories",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/github_repositories",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -295,7 +295,7 @@ Track website changes over time for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/website_evolution",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/website_evolution",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -312,7 +312,7 @@ Get a specific technology by ID or name.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/technologies/{id_or_fuzzy_name}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/technologies/{id_or_fuzzy_name}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -329,7 +329,7 @@ Discover connections across portfolio companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/portfolio_companies/connections",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/portfolio_companies/connections",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -346,7 +346,7 @@ Discover the latest products across all companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/products/latest",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/products/latest",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -363,7 +363,7 @@ Find companies using a specific technology.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/technologies/{technology_id_or_fuzzy_name}/technology_detections",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/technologies/{technology_id_or_fuzzy_name}/technology_detections",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -380,7 +380,7 @@ Discover posts from startup platforms (Product Hunt, Hacker News, etc.).
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/startup_platform_posts",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/startup_platform_posts",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -397,7 +397,7 @@ Search and filter news events across all companies.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/discover/news_events",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/discover/news_events",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -414,7 +414,7 @@ Get business connections for a company.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/predictleads/v3/companies/stripe.com/connections",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/predictleads/v3/companies/stripe.com/connections",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

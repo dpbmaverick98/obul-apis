@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/valyu`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/valyu`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Search the web, research, and proprietary datasets.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/valyu/v1/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/valyu/v1/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -67,7 +67,7 @@ Get AI-generated answers blended with search results.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/valyu/v1/answer",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/valyu/v1/answer",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -90,7 +90,7 @@ Extract clean, structured content from URLs.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/valyu/v1/contents",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/valyu/v1/contents",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -113,7 +113,7 @@ Create comprehensive research tasks.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/valyu/v1/deepresearch/tasks",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/valyu/v1/deepresearch/tasks",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

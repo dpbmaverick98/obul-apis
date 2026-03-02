@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/sixtyfour`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/sixtyfour`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Enrich company data with additional information and find associated people.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/sixtyfour/enrich-company",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/sixtyfour/enrich-company",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -63,7 +63,7 @@ Enrich lead information with additional details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/sixtyfour/enrich-lead",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/sixtyfour/enrich-lead",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -84,7 +84,7 @@ Discover phone numbers for leads using AI.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/sixtyfour/find-phone",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/sixtyfour/find-phone",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -104,7 +104,7 @@ Find email address for a lead.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/sixtyfour/find-email",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/sixtyfour/find-email",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

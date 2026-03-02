@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Search the web with intelligent processing.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/v1beta/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/v1beta/search",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -66,7 +66,7 @@ Extract relevant content from specific web URLs.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/v1beta/extract",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/v1beta/extract",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -89,7 +89,7 @@ OpenAI-compatible chat API for web research.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/chat/completions",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/chat/completions",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -112,7 +112,7 @@ Start a FindAll run for comprehensive entity discovery.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/v1beta/findall/runs",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/v1beta/findall/runs",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -137,7 +137,7 @@ Transform a natural language search objective into a structured FindAll spec.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/v1beta/findall/ingest",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/v1beta/findall/ingest",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -159,7 +159,7 @@ Initiate a task run for processing.
 ```json
 {
   "method": "POST",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/parallel/v1/tasks/runs",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/parallel/v1/tasks/runs",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

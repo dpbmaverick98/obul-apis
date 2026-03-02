@@ -28,7 +28,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/dome`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/dome`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -43,7 +43,7 @@ Fetches the current market price for a Polymarket market by token_id.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/market-price/{token_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/market-price/{token_id}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -62,7 +62,7 @@ Find markets on Polymarket using various filters.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/markets",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/markets",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -86,7 +86,7 @@ Fetches historical orderbook snapshots for a Polymarket market.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/orderbooks",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/orderbooks",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -108,7 +108,7 @@ Fetches all Polymarket positions for a wallet address.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/positions/wallet/{wallet_address}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/positions/wallet/{wallet_address}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -130,7 +130,7 @@ Fetches wallet information by EOA or proxy address.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/wallet",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/wallet",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -152,7 +152,7 @@ Fetches activity data for a specific user.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/activity",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/activity",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -175,7 +175,7 @@ Fetches historical candlestick data for a market.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/candlesticks/{condition_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/candlesticks/{condition_id}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -199,7 +199,7 @@ Fetches realized profit and loss for a wallet.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/wallet/pnl/{wallet_address}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/wallet/pnl/{wallet_address}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -221,7 +221,7 @@ Fetches historical trade data for a user.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/polymarket/orders",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/polymarket/orders",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -244,7 +244,7 @@ Fetches the current market price for a Kalshi market.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/kalshi/market-price/{market_ticker}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/kalshi/market-price/{market_ticker}",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -263,7 +263,7 @@ Find markets on Kalshi.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/kalshi/markets",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/kalshi/markets",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -287,7 +287,7 @@ Fetches orderbook snapshots for a Kalshi market.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/kalshi/orderbooks",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/kalshi/orderbooks",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -309,7 +309,7 @@ Fetches historical trade data for Kalshi markets.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/kalshi/trades",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/kalshi/trades",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -332,7 +332,7 @@ Find equivalent markets across platforms.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/matching-markets/sports",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/matching-markets/sports",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -354,7 +354,7 @@ Fetches historical crypto price data from Binance.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/crypto-prices/binance",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/crypto-prices/binance",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"
@@ -376,7 +376,7 @@ Fetches historical crypto price data from Chainlink.
 ```json
 {
   "method": "GET",
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/dome/crypto-prices/chainlink",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/dome/crypto-prices/chainlink",
   "headers": {
     "Content-Type": "application/json",
     "x-obul-api-key": "{{OBUL_API_KEY}}"

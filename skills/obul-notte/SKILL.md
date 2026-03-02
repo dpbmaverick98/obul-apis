@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/notte`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/notte`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Start a new browser session with configurable options.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/start",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/start",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -65,7 +65,7 @@ Scrape content from the current page in a session.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/scrape",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/page/scrape",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -86,7 +86,7 @@ Execute an action on the page (click, type, navigate, scroll, etc.).
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/execute",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/page/execute",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -107,7 +107,7 @@ Capture a screenshot of the current page.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/screenshot",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/page/screenshot",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -127,7 +127,7 @@ Scrape content from a URL without managing sessions.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/scrape",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/scrape",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -147,7 +147,7 @@ Start an AI agent to autonomously complete a browser task.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/start",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/agents/start",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -169,7 +169,7 @@ Observe current page state and get available actions.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/observe",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/page/observe",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -189,7 +189,7 @@ Stop and clean up a browser session.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/stop",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/stop",
   "method": "DELETE",
   "headers": {
     "Content-Type": "application/json",
@@ -206,7 +206,7 @@ Get session status and details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -223,7 +223,7 @@ Get all cookies from the browser session.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/cookies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/cookies",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -240,7 +240,7 @@ Set cookies in the browser session.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/cookies",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/cookies",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -260,7 +260,7 @@ Get agent execution status and results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/{agent_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/agents/{agent_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -277,7 +277,7 @@ Stop a running agent.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/{agent_id}/stop?session_id={session_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/agents/{agent_id}/stop?session_id={session_id}",
   "method": "DELETE",
   "headers": {
     "Content-Type": "application/json",
@@ -294,7 +294,7 @@ Get network request/response logs from the session.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/network/logs",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/sessions/{session_id}/network/logs",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -311,7 +311,7 @@ Extract structured content from raw HTML.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/scrape_from_html",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/notte/scrape_from_html",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

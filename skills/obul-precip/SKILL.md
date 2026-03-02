@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/precip`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/precip`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Returns comprehensive hourly precipitation data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ Returns comprehensive daily precipitation data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/daily?start=2024-01-01&end=2024-01-31&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/daily?start=2024-01-01&end=2024-01-31&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -76,7 +76,7 @@ Total precipitation in the last 48 hours.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/last-48?latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/last-48?latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -93,7 +93,7 @@ Get details about the most recent precipitation event.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/recent-rain?latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/recent-rain?latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -112,7 +112,7 @@ Get hourly near-surface air temperature in Celsius.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/temperature-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/temperature-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -129,7 +129,7 @@ Get hourly near-surface wind speed in meters per second.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/wind-speed-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/wind-speed-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -146,7 +146,7 @@ Get hourly relative humidity as a percentage.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/relative-humidity-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/relative-humidity-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -163,7 +163,7 @@ Get hourly soil moisture percentage.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/soil-moisture-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/soil-moisture-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -180,7 +180,7 @@ Get hourly downward short-wave radiation flux.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/solar-radiation-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/solar-radiation-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -197,7 +197,7 @@ Get hourly wind direction in compass degrees.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/wind-direction-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/wind-direction-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -214,7 +214,7 @@ Get hourly wind gust speed in meters per second.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/wind-speed-gust-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/wind-speed-gust-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -231,7 +231,7 @@ Get hourly cloud cover fraction (0-1).
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/cloud-cover-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/cloud-cover-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -248,7 +248,7 @@ Get hourly specific humidity in kg/kg.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/specific-humidity-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/specific-humidity-hourly?start=2024-01-01&end=2024-01-02&latitude=37.7749&longitude=-122.4194",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -265,7 +265,7 @@ Get map tiles for visualization in GIS tools.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/api/v1/map/last-48/ImageServer/tile/{z}/{y}/{x}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/api/v1/map/last-48/ImageServer/tile/{z}/{y}/{x}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -284,7 +284,7 @@ Get HTML widget displaying comprehensive weather data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/precip/embed/location?lat=37.7749&lon=-122.4194&units=metric",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/precip/embed/location?lat=37.7749&lon=-122.4194&units=metric",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

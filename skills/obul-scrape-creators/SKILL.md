@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Get TikTok user profile data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/tiktok/profile?handle=khaby.lame",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/tiktok/profile?handle=khaby.lame",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ Get TikTok video details and transcript.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v2/tiktok/video?url=https://www.tiktok.com/@user/video/123",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v2/tiktok/video?url=https://www.tiktok.com/@user/video/123",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -74,7 +74,7 @@ Get Instagram user profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/instagram/profile?handle=therock",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/instagram/profile?handle=therock",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -91,7 +91,7 @@ Get Instagram post or reel details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/instagram/post?url=https://www.instagram.com/p/ABC123/",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/instagram/post?url=https://www.instagram.com/p/ABC123/",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -108,7 +108,7 @@ Get YouTube channel information.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/youtube/channel?url=https://www.youtube.com/@MrBeast",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/youtube/channel?url=https://www.youtube.com/@MrBeast",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -125,7 +125,7 @@ Get YouTube video details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/youtube/video?url=https://www.youtube.com/watch?v=abc123",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/youtube/video?url=https://www.youtube.com/watch?v=abc123",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -142,7 +142,7 @@ Get transcript from a YouTube video.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/youtube/video/transcript?url=https://www.youtube.com/watch?v=abc123",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/youtube/video/transcript?url=https://www.youtube.com/watch?v=abc123",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -159,7 +159,7 @@ Get Twitter/X user profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/twitter/profile?handle=elonmusk",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/twitter/profile?handle=elonmusk",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -176,7 +176,7 @@ Get tweet details.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/twitter/tweet?url=https://twitter.com/user/status/123",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/twitter/tweet?url=https://twitter.com/user/status/123",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -193,7 +193,7 @@ Get LinkedIn profile data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/linkedin/profile?url=https://www.linkedin.com/in/sundarpichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/linkedin/profile?url=https://www.linkedin.com/in/sundarpichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -210,7 +210,7 @@ Get LinkedIn company page data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/linkedin/company?url=https://www.linkedin.com/company/google",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/linkedin/company?url=https://www.linkedin.com/company/google",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -227,7 +227,7 @@ Get Facebook profile data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/facebook/profile?url=https://www.facebook.com/zuck",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/facebook/profile?url=https://www.facebook.com/zuck",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -244,7 +244,7 @@ Get Reddit post and comments.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/reddit/subreddit?subreddit=technology",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/reddit/subreddit?subreddit=technology",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -261,7 +261,7 @@ Get Google search results.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/google/search?query=artificial+intelligence",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/google/search?query=artificial+intelligence",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -278,7 +278,7 @@ Search Facebook ads.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/facebook/adLibrary/ad?id=ad_id",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/facebook/adLibrary/ad?id=ad_id",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -295,7 +295,7 @@ Get Threads profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/threads/profile?handle=zuck",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/threads/profile?handle=zuck",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -312,7 +312,7 @@ Get Bluesky profile.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/bluesky/profile?handle=handle.bsky.social",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/bluesky/profile?handle=handle.bsky.social",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -329,7 +329,7 @@ Get Pinterest profile and pins.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/scrapecreators/v1/pinterest/search?query=interior+design",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/scrapecreators/v1/pinterest/search?query=interior+design",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

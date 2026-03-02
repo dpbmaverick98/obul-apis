@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Find the most likely email address from domain, first name, and last name.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/email-finder?domain=stripe.com&full_name=Sundar+Pichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/email-finder?domain=stripe.com&full_name=Sundar+Pichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ Search emails based on website domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/domain-search?domain=stripe.com&company=Stripe",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/domain-search?domain=stripe.com&company=Stripe",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -74,7 +74,7 @@ Enrich an email address with person and company data.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/enrich?email=sundar@google.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/enrich?email=sundar@google.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -91,7 +91,7 @@ Verify deliverability of an email address.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/email-verifier?email=user@company.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/email-verifier?email=user@company.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -108,7 +108,7 @@ Find email from a LinkedIn profile URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/linkedin?url=https://linkedin.com/in/sundarpichai",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/linkedin?url=https://linkedin.com/in/sundarpichai",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -125,7 +125,7 @@ Get company information from a domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/companies/find?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/companies/find?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -142,7 +142,7 @@ Discover technologies used by a website.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/technology?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/technology?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -159,7 +159,7 @@ Find phone numbers associated with an email or domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/phone-finder?email=user@company.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/phone-finder?email=user@company.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -176,7 +176,7 @@ Get domain suggestions for a company name.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/domain-suggestions?query=Stripe",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/domain-suggestions?query=Stripe",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -193,7 +193,7 @@ Search for companies using natural language queries or structured filters.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/reveal/search",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/reveal/search",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -216,7 +216,7 @@ Find the email address of a blog post author from the article URL.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/author-finder?url=https://example.com/blog/post",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/author-finder?url=https://example.com/blog/post",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -233,7 +233,7 @@ Get email format patterns used by a domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/email-format?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/email-format?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -250,7 +250,7 @@ Get employee location distribution for a domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/location?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/location?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -267,7 +267,7 @@ Get count of email addresses for a domain by department and seniority.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/email-count?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/email-count?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -284,7 +284,7 @@ Check the status and availability of a domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/domain-status?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/domain-status?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -301,7 +301,7 @@ Get person information from an email address.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/people/find?email=user@company.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/people/find?email=user@company.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -318,7 +318,7 @@ Get combined person and company information from an email.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/combined/find?email=user@company.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/combined/find?email=user@company.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -335,7 +335,7 @@ Validate a phone number and get carrier information.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/phone-validator?phone=+14155551234&country_code=US",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/phone-validator?phone=+14155551234&country_code=US",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -352,7 +352,7 @@ Find domains similar to a given domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/similar?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/similar?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -369,7 +369,7 @@ Find the sources where an email was found on the web.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/tomba/v1/email-sources?email=user@company.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/tomba/v1/email-sources?email=user@company.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

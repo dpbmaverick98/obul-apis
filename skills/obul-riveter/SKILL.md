@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Scrape a webpage and return text content.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter/v1/scrape",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter/v1/scrape",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -60,7 +60,7 @@ Define structure of output directly in the API request with input data and outpu
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter/v1/run",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter/v1/run",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -94,7 +94,7 @@ Check current status of a project run.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter/v1/run_status?run_key=uuid",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter/v1/run_status?run_key=uuid",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -111,7 +111,7 @@ Retrieve processed data from a completed project run.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter/v1/run_data?run_key=uuid",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter/v1/run_data?run_key=uuid",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -128,7 +128,7 @@ Stop a currently running project.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/riveter/v1/stop_run?run_key=uuid",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/riveter/v1/stop_run?run_key=uuid",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",

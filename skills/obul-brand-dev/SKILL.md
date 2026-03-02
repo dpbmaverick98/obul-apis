@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Get logos, backdrops, colors, industry, description, and more from any domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ Get font information from a brand's website including font families, usage stati
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/fonts?domain=google.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/fonts?domain=google.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -76,7 +76,7 @@ Extract comprehensive design system information including colors, typography, sp
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/styleguide?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/styleguide?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -93,7 +93,7 @@ Capture a screenshot of a website with viewport or full-page options.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/screenshot?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/screenshot?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -110,7 +110,7 @@ Get brand information using a stock ticker symbol.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve-by-ticker?ticker=AAPL",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve-by-ticker?ticker=AAPL",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -127,7 +127,7 @@ Classify a brand into a 2022 NAICS code.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/naics?input=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/naics?input=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -144,7 +144,7 @@ Use AI to extract specific data points from a brand's website.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/ai/query",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/ai/query",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -168,7 +168,7 @@ Extract product information from a brand's website using AI.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/ai/products",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/ai/products",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -189,7 +189,7 @@ Get brand information from an email address domain.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve-by-email?email=contact@stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve-by-email?email=contact@stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -206,7 +206,7 @@ Get brand information using a company name.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve-by-name?name=Stripe",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve-by-name?name=Stripe",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -223,7 +223,7 @@ Get simplified brand data (domain, title, colors, logos, backdrops).
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve-simplified?domain=stripe.com",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve-simplified?domain=stripe.com",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -240,7 +240,7 @@ Get brand information using an ISIN (International Securities Identification Num
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/retrieve-by-isin?isin=US0378331005",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/retrieve-by-isin?isin=US0378331005",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -257,7 +257,7 @@ Identify brand from transaction information.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/brand-dev/v1/brand/transaction_identifier?transaction_info=Stripe+Payment",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/brand-dev/v1/brand/transaction_identifier?transaction_info=Stripe+Payment",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",

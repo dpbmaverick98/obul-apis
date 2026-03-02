@@ -26,7 +26,7 @@ All requests route through the Obul proxy. Include your Obul API key in every re
 }
 ```
 
-Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep`
+Base URL: `https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep`
 
 To get an Obul API key, sign up at **https://my.obul.ai**.
 
@@ -40,7 +40,7 @@ Initiate a web page scrape with various extraction options.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/scrapes",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/scrapes",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -64,7 +64,7 @@ Get AI to perform research and find answers to questions by searching and browsi
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/answers",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/answers",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -85,7 +85,7 @@ Extract all URLs from a website.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/maps",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/maps",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -105,7 +105,7 @@ Start a website crawl with configurable depth and scope.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/crawls",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/crawls",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -129,7 +129,7 @@ Process multiple URLs in a batch.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/batches",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/batches",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -152,7 +152,7 @@ Retrieve processed content from batches and crawls.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/retrieve",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/retrieve",
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
@@ -172,7 +172,7 @@ Poll for status of a scrape operation.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/scrapes/{scrape_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/scrapes/{scrape_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -189,7 +189,7 @@ Poll for results of an AI research task.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/answers/{answer_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/answers/{answer_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -206,7 +206,7 @@ Poll for status of a website crawl.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/crawls/{crawl_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/crawls/{crawl_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -223,7 +223,7 @@ Get the list of pages discovered during a crawl.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/crawls/{crawl_id}/pages",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/crawls/{crawl_id}/pages",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -240,7 +240,7 @@ Poll for status of a batch processing job.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/batches/{batch_id}",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/batches/{batch_id}",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
@@ -257,7 +257,7 @@ Get the list of processed items from a batch.
 
 ```json
 {
-  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/olostep/v1/batches/{batch_id}/items",
+  "url": "https://proxy.obul.ai/proxy/https/x402.orth.sh/olostep/v1/batches/{batch_id}/items",
   "method": "GET",
   "headers": {
     "Content-Type": "application/json",
