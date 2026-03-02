@@ -4,39 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-The **Obul Plugin Marketplace** — a collection of Claude Code plugins providing pay-per-use API access to x402 services through the Obul proxy (`proxy.obul.ai`). Each plugin bundles related skills by category. Each skill wraps an external service's x402 API so that agents can call it with just an `OBUL_API_KEY`.
+The **Obul API Marketplace** — a collection of pay-per-use APIs accessed through the Obul proxy (`proxy.obul.ai`). Each API is wrapped as a skill that AI agents can use with just an `OBUL_API_KEY`.
 
 There is no application code, no build system, no tests. The repo is documentation only.
 
 ## Repository Structure
 
 ```
-.claude-plugin/marketplace.json       # Marketplace manifest (lists all 8 plugins)
-registry.md                           # Registry reference and publishing guide
-plugins/
-  <plugin-name>/                      # Category plugin (e.g., obul-scrape, obul-search)
-    .claude-plugin/plugin.json        # Plugin manifest
-    skills/
-      <service-name>/
-        SKILL.md                      # Skill definition file
-    commands/
-      <command>.md                    # User-invocable slash commands
-    rules/
-      setup.md                        # Auth setup rule (shared)
+apis.json                           # API marketplace manifest (lists all 61 skills)
+skills/                             # All skills directory
+  <service-name>/
+    SKILL.md                        # Skill definition file
+registry.md                         # Registry reference and publishing guide
+plugins/                            # Legacy plugin structure (deprecated)
 ```
 
-### Plugin Categories
+### Skill Categories
 
-| Plugin | Category | Skills |
-|--------|----------|--------|
-| `obul-core` | Infrastructure | obul-proxy, pinata, cnvrting |
-| `obul-scrape` | Web scraping | firecrawl, browserbase, zyte, minifetch, x402engine-web |
-| `obul-search` | Web search | firecrawl-search, exa |
-| `obul-social` | Social media | x-search, neynar, reddit |
-| `obul-crypto` | Blockchain/DeFi | coingecko, heyelsa, zapper, slamai, silverback, blocksec, x402engine-chain, ordiscan |
-| `obul-media` | Image/Audio/Video | freepik, x402engine-image, x402engine-audio, dtelecom, aibeats, genbase |
-| `obul-security` | Security/Risk | orac, blackswan |
-| `obul-leads` | Lead Enrichment | stableenrich |
+| Category | Skills |
+|----------|--------|
+| Infrastructure | obul-proxy, pinata, cnvrting, didit, textbelt |
+| Web Scraping | firecrawl, browserbase, zyte, minifetch, x402engine-web, aviato, fiber, notte, nyne, olostep, riveter, scrapegraph |
+| Web Search | firecrawl-search, exa, jina, parallel, perplexity, tavily, searchapi, valyu |
+| Social Media | x-search, neynar, reddit, scrape-creators |
+| Blockchain/DeFi | coingecko, heyelsa, zapper, slamai, silverback, blocksec, x402engine-chain, ordiscan, dome |
+| Image/Audio/Video | freepik, x402engine-image, x402engine-audio, dtelecom, aibeats, genbase, nano-banana, nano-banana-2, tavus, zai |
+| Security/Risk | orac, blackswan |
+| Lead Enrichment | stableenrich, brand-dev, coresignal, openmart, predictleads, sixtyfour, tomba, apollo, hunter, logo |
+| Weather Data | precip |
 
 ## Skill File Format
 
@@ -68,4 +63,4 @@ Every `SKILL.md` follows this structure:
 
 Reference guide: https://github.com/dpbmaverick98/Agent_Army_Skills/blob/main/Agent_Army_Skills_Obul/how-to-write-obul-skills.md
 
-Workflow: (1) Research the service's x402 API thoroughly via web search, (2) use an existing skill under `plugins/<category>/skills/` as a template, (3) create `plugins/<category>/skills/<service-name>/SKILL.md`.
+Workflow: (1) Research the service's x402 API thoroughly via web search, (2) use an existing skill under `skills/` as a template, (3) create `skills/<service-name>/SKILL.md`.

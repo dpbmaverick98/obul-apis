@@ -1,0 +1,371 @@
+---
+name: obul-notte
+description: Browser automation API for AI agents. Start browser sessions, run AI agents, scrape webpages, and automate browser tasks with headless Chrome/Firefox.
+homepage: https://notte.ai
+metadata:
+  obul-skill: "🌐"
+  requires.env: OBUL_API_KEY
+  requires.primaryEnv: OBUL_API_KEY
+registries: {}
+---
+
+# Notte
+
+Browser automation API for AI agents. Start browser sessions, run AI agents, scrape webpages, and automate browser tasks with headless Chrome/Firefox. Features include CAPTCHA solving, proxy support, and persistent browser profiles.
+
+## Authentication
+
+All requests route through the Obul proxy. Include your Obul API key in every request:
+
+```json
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+Base URL: `https://proxy.obul.ai/proxy/https://x402.orth.sh/notte`
+
+To get an Obul API key, sign up at **https://my.obul.ai**.
+
+## Common Operations
+
+### Start Browser Session
+
+Start a new browser session with configurable options.
+
+**Pricing:** Dynamic
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/start",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "headless": true,
+    "browser_type": "chromium",
+    "solve_captchas": true,
+    "idle_timeout_minutes": 5
+  }
+}
+```
+
+Returns session_id for subsequent operations.
+
+### Scrape Page Content
+
+Scrape content from the current page in a session.
+
+**Pricing:** $0.003
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/scrape",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "only_main_content": true,
+    "scrape_links": true
+  }
+}
+```
+
+### Execute Action
+
+Execute an action on the page (click, type, navigate, scroll, etc.).
+
+**Pricing:** $0.002
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/execute",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "type": "goto",
+    "url": "https://example.com"
+  }
+}
+```
+
+### Take Screenshot
+
+Capture a screenshot of the current page.
+
+**Pricing:** $0.001
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/screenshot",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "full_page": false
+  }
+}
+```
+
+### Scrape URL Directly
+
+Scrape content from a URL without managing sessions.
+
+**Pricing:** $0.01
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/scrape",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "url": "https://example.com"
+  }
+}
+```
+
+### Start AI Agent
+
+Start an AI agent to autonomously complete a browser task.
+
+**Pricing:** Dynamic
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/start",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "task": "Find the contact email from the about page",
+    "session_id": "{session_id}",
+    "max_steps": 20
+  }
+}
+```
+
+### Observe Page
+
+Observe current page state and get available actions.
+
+**Pricing:** $0.005
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/page/observe",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "max_nb_actions": 50
+  }
+}
+```
+
+### Stop Session
+
+Stop and clean up a browser session.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/stop",
+  "method": "DELETE",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Get Session Status
+
+Get session status and details.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Get Cookies
+
+Get all cookies from the browser session.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/cookies",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Set Cookies
+
+Set cookies in the browser session.
+
+**Pricing:** $0.001
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/cookies",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "cookies": [{"name": "session", "value": "abc123"}]
+  }
+}
+```
+
+### Get Agent Status
+
+Get agent execution status and results.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/{agent_id}",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Stop Agent
+
+Stop a running agent.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/agents/{agent_id}/stop?session_id={session_id}",
+  "method": "DELETE",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Get Network Logs
+
+Get network request/response logs from the session.
+
+**Pricing:** Free
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/sessions/{session_id}/network/logs",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
+```
+
+### Scrape from HTML
+
+Extract structured content from raw HTML.
+
+**Pricing:** $0.002
+
+```json
+{
+  "url": "https://proxy.obul.ai/proxy/https://x402.orth.sh/notte/scrape_from_html",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  },
+  "body": {
+    "frames": ["<html>...</html>"]
+  }
+}
+```
+
+## Endpoint Pricing Reference
+
+| Endpoint | Price | Purpose |
+|----------|-------|---------|
+| `POST /sessions/start` | Dynamic | Start browser session |
+| `GET /sessions/{session_id}` | Free | Get session status |
+| `DELETE /sessions/{session_id}/stop` | Free | Stop session |
+| `GET /sessions/{session_id}/cookies` | Free | Get cookies |
+| `POST /sessions/{session_id}/cookies` | $0.001 | Set cookies |
+| `GET /sessions/{session_id}/network/logs` | Free | Get network logs |
+| `POST /sessions/{session_id}/page/scrape` | $0.003 | Scrape page content |
+| `POST /sessions/{session_id}/page/execute` | $0.002 | Execute action |
+| `POST /sessions/{session_id}/page/screenshot` | $0.001 | Take screenshot |
+| `POST /sessions/{session_id}/page/observe` | $0.005 | Observe page actions |
+| `POST /scrape` | $0.01 | Direct URL scrape |
+| `POST /scrape_from_html` | $0.002 | Parse HTML |
+| `POST /agents/start` | Dynamic | Start AI agent |
+| `GET /agents/{agent_id}` | Free | Get agent status |
+| `DELETE /agents/{agent_id}/stop` | Free | Stop agent |
+
+## When to Use
+
+- **Web Automation**: Automate repetitive browser tasks
+- **AI Agents**: Power autonomous agents to complete complex web tasks
+- **Web Scraping**: Scrape dynamic JavaScript-heavy pages
+- **Form Filling**: Automate form submissions
+- **Testing**: Automate browser testing workflows
+
+## Best Practices
+
+1. **Session Management**: Reuse sessions for related tasks to save costs
+2. **Idle Timeout**: Set appropriate idle timeouts (default 3 minutes)
+3. **CAPTCHA Solving**: Enable for sites with bot protection
+4. **Cleanup**: Always stop sessions when done to avoid charges
+
+## Error Handling
+
+| Code | Cause | Solution |
+|------|-------|----------|
+| 400 | Invalid parameters | Check required fields and format |
+| 401 | Missing API key | Include `x-obul-api-key` header |
+| 402 | Payment required | Check Obul account balance |
+| 404 | Session not found | Verify session_id is valid |
+| 408 | Timeout | Increase timeout or simplify task |
+| 429 | Rate limited | Implement exponential backoff |
+| 500 | Server error | Retry with exponential backoff |

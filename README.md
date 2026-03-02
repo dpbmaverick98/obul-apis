@@ -1,76 +1,58 @@
-# Obul Skills
+# Obul API Marketplace
 
-Obul is the **universal API gateway for the agent economy**. It proxies requests to x402-enabled APIs and handles payment automatically — no crypto wallet, no USDC, no gas fees. One `OBUL_API_KEY`, consolidated billing, scoped keys with spending caps. Pay-per-use access to any supported service.
+A collection of pay-per-use APIs accessed through the Obul proxy (`proxy.obul.ai`). Each API is wrapped as a skill that AI agents can use with just an `OBUL_API_KEY`.
 
-## What is x402?
+## Quick Start
 
-[x402](https://www.x402.org/) is an open payment protocol (by Coinbase) that uses HTTP 402 for instant, per-request stablecoin payments. Obul abstracts x402 away entirely — you just make normal HTTP requests.
+Get an API key at [https://my.obul.ai](https://my.obul.ai), then make requests:
 
-## Getting Started
-
-1. **Sign up** at [my.obul.ai](https://my.obul.ai) (free, ~30 seconds)
-2. **Set your API key** as an environment variable:
-   ```sh
-   export OBUL_API_KEY="your-key-here"
-   ```
-3. **Make requests** through the proxy. URL pattern:
-   ```
-   https://proxy.obul.ai/proxy/{scheme}/{host}{path}
-   ```
-   All requests must include the `x-obul-api-key` header.
-
-## Plugin Categories
-
-| | Category | Plugin | Skills |
-|---|---|---|---|
-| 🔗 | Infrastructure | [obul-core](plugins/obul-core/) | obul-proxy, pinata, cnvrting |
-| 🔥 | Web Scraping | [obul-scrape](plugins/obul-scrape/) | firecrawl, browserbase, zyte, minifetch, x402engine-web |
-| 🔍 | Web Search | [obul-search](plugins/obul-search/) | firecrawl-search, exa |
-| 🐦 | Social Media | [obul-social](plugins/obul-social/) | x-search, neynar, reddit |
-| 💰 | Blockchain/DeFi | [obul-crypto](plugins/obul-crypto/) | coingecko, heyelsa, zapper, slamai, silverback, blocksec, x402engine-chain, ordiscan |
-| 🎨 | Media | [obul-media](plugins/obul-media/) | freepik, x402engine-image, x402engine-audio, dtelecom, aibeats, genbase |
-| 🛡️ | Security & Risk | [obul-security](plugins/obul-security/) | orac, blackswan |
-| 👤 | Lead Enrichment | [obul-leads](plugins/obul-leads/) | stableenrich |
-
-## Usage Example
-
-```sh
-curl -s -X POST "https://proxy.obul.ai/proxy/https/firecrawl.x402endpoints.com/v1/scrape" \
-  -H "Content-Type: application/json" \
-  -H "x-obul-api-key: $OBUL_API_KEY" \
-  -d '{"url": "https://example.com", "formats": ["markdown"]}'
+```json
+{
+  "method": "POST",
+  "url": "https://proxy.obul.ai/proxy/https/<upstream-url>",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-obul-api-key": "{{OBUL_API_KEY}}"
+  }
+}
 ```
 
-## Claude Code Plugin
+## Available Skills
 
-This repo is a Claude Code plugin marketplace. Add it and install all plugins:
+| Category | Skills |
+|----------|--------|
+| Infrastructure | obul-proxy, obul-pinata, obul-cnvrting, obul-didit, obul-textbelt |
+| Web Scraping | obul-firecrawl, obul-browserbase, obul-zyte, obul-minifetch, obul-x402engine-web, obul-aviato, obul-fiber, obul-notte, obul-nyne, obul-olostep, obul-riveter, obul-scrapegraph |
+| Web Search | obul-firecrawl-search, obul-exa, obul-jina, obul-parallel, obul-perplexity, obul-tavily, obul-searchapi, obul-valyu |
+| Social Media | obul-tweetx402, obul-neynar, obul-reddit, obul-scrape-creators |
+| Blockchain/DeFi | obul-coingecko, obul-heyelsa, obul-zapper, obul-slamai, obul-silverback, obul-blocksec, obul-x402engine-chain, obul-ordiscan, obul-dome |
+| Image/Audio/Video | obul-freepik, obul-x402engine-image, obul-x402engine-audio, obul-dtelecom, obul-aibeats, obul-genbase, obul-nano-banana, obul-nano-banana-2, obul-tavus, obul-zai |
+| Security/Risk | obul-orac, obul-blackswan |
+| Lead Enrichment | obul-stableenrich, obul-brand-dev, obul-coresignal, obul-openmart, obul-predictleads, obul-sixtyfour, obul-tomba, obul-apollo, obul-hunter, obul-logo |
+| Weather Data | obul-precip |
 
-```sh
-claude plugin marketplace add https://github.com/obulai/obul-plugin.git
-claude plugin install obul-core obul-scrape obul-search obul-social obul-crypto obul-media obul-security obul-leads
+## Repository Structure
+
+```
+apis.json                           # API marketplace manifest (lists all 61 skills)
+skills/                             # All skills directory
+  <service-name>/
+    SKILL.md                        # Skill definition file
+registry.md                         # Registry reference and publishing guide
+CLAUDE.md                           # Claude Code guidance
 ```
 
-### Commands
+## Skills
 
-| Command | Plugin | Description | Cost |
-|---------|--------|-------------|------|
-| `/obul-core:proxy <url>` | core | Proxy any request to an x402 endpoint | Varies |
-| `/obul-scrape:scrape <url>` | scrape | Scrape a webpage | $0.001 |
-| `/obul-scrape:screenshot <url>` | scrape | Screenshot a webpage | $0.01 |
-| `/obul-search:search <query>` | search | Search the web | $0.002 |
-| `/obul-social:x-search <query>` | social | Search X/Twitter | $0.001 |
-| `/obul-social:farcaster <query>` | social | Search Farcaster | $0.01 |
-| `/obul-crypto:price <coin>` | crypto | Get crypto prices | $0.01 |
-| `/obul-crypto:wallet <address>` | crypto | Look up wallet info | $0.001 |
-| `/obul-media:imagine <prompt>` | media | Generate an image | $0.015+ |
-| `/obul-media:transcribe <file>` | media | Transcribe audio or generate speech | $0.01+ |
-| `/obul-security:audit <target>` | security | Security analysis | $0.005+ |
-| `/obul-leads:enrich <query>` | leads | People/company enrichment & lead discovery | $0.02+ |
-
-See [PLUGIN.md](PLUGIN.md) for full installation and usage details.
+Each skill is documented in `skills/<name>/SKILL.md` with:
+- Service description and use cases
+- Authentication instructions
+- Common operations with pricing
+- Endpoint pricing reference
+- Best practices and error handling
 
 ## Resources
 
-- [Obul Dashboard](https://my.obul.ai) — manage keys, view usage, set spending caps
-- [x402 Protocol](https://www.x402.org/) — the payment protocol powering Obul
-- [Writing a New Skill](https://github.com/dpbmaverick98/Agent_Army_Skills/blob/main/Agent_Army_Skills_Obul/how-to-write-obul-skills.md) — guide for contributors
+- [Registry Guide](registry.md) - Publishing skills to registries
+- [Obul Documentation](https://docs.obul.ai)
+- [Get API Key](https://my.obul.ai)

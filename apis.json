@@ -1,0 +1,434 @@
+{
+  "name": "Obul API Marketplace",
+  "description": "Collection of pay-per-use APIs accessed through the Obul proxy (proxy.obul.ai). Each API is wrapped as a skill for AI agents.",
+  "version": "1.0.0",
+  "apis": [
+    {
+      "name": "obul-proxy",
+      "category": "infrastructure",
+      "skill": "obul-proxy",
+      "description": "Proxy any request through Obul to access x402 APIs with automatic payment handling",
+      "homepage": "https://obul.ai"
+    },
+    {
+      "name": "pinata",
+      "category": "infrastructure",
+      "skill": "obul-pinata",
+      "description": "Pin files to IPFS and retrieve them by CID",
+      "homepage": "https://pinata.cloud"
+    },
+    {
+      "name": "cnvrt.ing",
+      "category": "infrastructure",
+      "skill": "cnvrting",
+      "description": "Convert media files, transcribe audio/video, extract text from images via OCR",
+      "homepage": "https://cnvrt.ing"
+    },
+    {
+      "name": "didit",
+      "category": "infrastructure",
+      "skill": "obul-didit",
+      "description": "Unified authentication API supporting 100+ providers with token management",
+      "homepage": "https://didit.com"
+    },
+    {
+      "name": "firecrawl",
+      "category": "web-scraping",
+      "skill": "obul-firecrawl",
+      "description": "Scrape URLs, crawl websites, map site URLs, extract structured data",
+      "homepage": "https://www.firecrawl.dev"
+    },
+    {
+      "name": "browserbase",
+      "category": "web-scraping",
+      "skill": "obul-browserbase",
+      "description": "Headless browser sessions for Playwright/Puppeteer automation",
+      "homepage": "https://www.browserbase.com"
+    },
+    {
+      "name": "zyte",
+      "category": "web-scraping",
+      "skill": "obul-zyte",
+      "description": "Anti-bot bypass, JavaScript rendering, structured data extraction",
+      "homepage": "https://www.zyte.com/zyte-api"
+    },
+    {
+      "name": "minifetch",
+      "category": "web-scraping",
+      "skill": "obul-minifetch",
+      "description": "Extract URL metadata, Open Graph tags, SEO data, link discovery",
+      "homepage": "https://minifetch.com"
+    },
+    {
+      "name": "x402engine-web",
+      "category": "web-scraping",
+      "skill": "obul-x402engine-web",
+      "description": "Quick single-page scrape to markdown or webpage screenshot",
+      "homepage": "https://x402engine.app"
+    },
+    {
+      "name": "aviato",
+      "category": "web-scraping",
+      "skill": "obul-aviato",
+      "description": "AI-powered web scraping and data extraction with structured output",
+      "homepage": "https://aviato.ai"
+    },
+    {
+      "name": "fiber",
+      "category": "web-scraping",
+      "skill": "obul-fiber",
+      "description": "Web scraping API with AI extraction, proxy rotation, and JavaScript rendering",
+      "homepage": "https://fiber.dev"
+    },
+    {
+      "name": "notte",
+      "category": "web-scraping",
+      "skill": "obul-notte",
+      "description": "AI content extraction from documents, PDFs, and web pages",
+      "homepage": "https://notte.io"
+    },
+    {
+      "name": "nyne",
+      "category": "web-scraping",
+      "skill": "obul-nyne",
+      "description": "Real-time web scraping with anti-detection and scalable infrastructure",
+      "homepage": "https://nyne.ai"
+    },
+    {
+      "name": "olostep",
+      "category": "web-scraping",
+      "skill": "obul-olostep",
+      "description": "AI-powered web search, extraction, and custom research agents",
+      "homepage": "https://olostep.com"
+    },
+    {
+      "name": "riveter",
+      "category": "web-scraping",
+      "skill": "obul-riveter",
+      "description": "Web search, scraping, and data extraction API with structured output",
+      "homepage": "https://riveter.com"
+    },
+    {
+      "name": "scrapegraph",
+      "category": "web-scraping",
+      "skill": "obul-scrapegraph",
+      "description": "AI-powered web scraping and content extraction",
+      "homepage": "https://scrapegraph.ai"
+    },
+    {
+      "name": "firecrawl-search",
+      "category": "web-search",
+      "skill": "obul-firecrawl-search",
+      "description": "Web search with auto-scraped markdown from results",
+      "homepage": "https://www.firecrawl.dev"
+    },
+    {
+      "name": "exa",
+      "category": "web-search",
+      "skill": "obul-exa",
+      "description": "Neural and semantic web search, find similar pages, extract content, AI answers with citations",
+      "homepage": "https://exa.ai"
+    },
+    {
+      "name": "tweetx402",
+      "category": "social-media",
+      "skill": "obul-tweetx402",
+      "description": "Search X/Twitter, look up user profiles, read tweets, browse timelines",
+      "homepage": "https://tweetx402.com"
+    },
+    {
+      "name": "neynar",
+      "category": "social-media",
+      "skill": "obul-neynar",
+      "description": "Search Farcaster casts, user profiles, channels, and feeds",
+      "homepage": "https://neynar.com"
+    },
+    {
+      "name": "reddit",
+      "category": "social-media",
+      "skill": "obul-reddit",
+      "description": "Search Reddit posts and fetch post comments",
+      "homepage": "https://www.reddit.com"
+    },
+    {
+      "name": "scrape-creators",
+      "category": "social-media",
+      "skill": "obul-scrape-creators",
+      "description": "Social media data extraction from 22+ platforms including TikTok, Instagram, YouTube, Twitter",
+      "homepage": "https://scrapecreators.com"
+    },
+    {
+      "name": "coingecko",
+      "category": "blockchain-defi",
+      "skill": "obul-coingecko",
+      "description": "Cryptocurrency prices, on-chain token data, trending pools, pool search",
+      "homepage": "https://www.coingecko.com"
+    },
+    {
+      "name": "heyelsa",
+      "category": "blockchain-defi",
+      "skill": "obul-heyelsa",
+      "description": "DeFi portfolio analytics, token prices, wallet balances, swap execution, staking",
+      "homepage": "https://x402.heyelsa.ai"
+    },
+    {
+      "name": "zapper",
+      "category": "blockchain-defi",
+      "skill": "obul-zapper",
+      "description": "Portfolio balances, DeFi app positions, NFT holdings, token prices across 60+ chains",
+      "homepage": "https://protocol.zapper.xyz"
+    },
+    {
+      "name": "slamai",
+      "category": "blockchain-defi",
+      "skill": "obul-slamai",
+      "description": "Smart money intelligence, wallet reputation scoring, WalletDNA behavioral analysis",
+      "homepage": "https://www.slamai.xyz"
+    },
+    {
+      "name": "silverback",
+      "category": "blockchain-defi",
+      "skill": "obul-silverback",
+      "description": "Technical analysis, arbitrage scanning, DeFi yield finding, whale monitoring, token audits",
+      "homepage": "https://x402.silverbackdefi.app"
+    },
+    {
+      "name": "blocksec",
+      "category": "blockchain-defi",
+      "skill": "obul-blocksec",
+      "description": "Address compliance screening, AML risk assessment, address labeling, KYA reports",
+      "homepage": "https://x402.blocksec.ai"
+    },
+    {
+      "name": "x402engine-chain",
+      "category": "blockchain-defi",
+      "skill": "obul-x402engine-chain",
+      "description": "Wallet balances, transactions, PnL, ENS resolution, token prices, tx simulation",
+      "homepage": "https://x402engine.app"
+    },
+    {
+      "name": "ordiscan",
+      "category": "blockchain-defi",
+      "skill": "obul-ordiscan",
+      "description": "Bitcoin Ordinals inscriptions, runes, BRC-20 balances, rare sats, UTXOs",
+      "homepage": "https://ordiscan.com"
+    },
+    {
+      "name": "freepik",
+      "category": "image-audio-video",
+      "skill": "obul-freepik",
+      "description": "AI image generation with Freepik Mystic, multiple styles and resolutions",
+      "homepage": "https://www.freepik.com"
+    },
+    {
+      "name": "x402engine-image",
+      "category": "image-audio-video",
+      "skill": "obul-x402engine-image",
+      "description": "Generate images with FLUX models or text-in-image with Ideogram",
+      "homepage": "https://x402engine.app"
+    },
+    {
+      "name": "x402engine-audio",
+      "category": "image-audio-video",
+      "skill": "obul-x402engine-audio",
+      "description": "Text-to-speech with OpenAI/ElevenLabs, audio transcription with Deepgram",
+      "homepage": "https://x402engine.app"
+    },
+    {
+      "name": "dtelecom",
+      "category": "image-audio-video",
+      "skill": "obul-dtelecom",
+      "description": "Real-time speech-to-text with dual-engine architecture, 99+ languages",
+      "homepage": "https://x402stt.dtelecom.org"
+    },
+    {
+      "name": "aibeats",
+      "category": "image-audio-video",
+      "skill": "obul-aibeats",
+      "description": "AI music generation, lyric writing, prompt enhancement",
+      "homepage": "https://www.aibeats.fun"
+    },
+    {
+      "name": "genbase",
+      "category": "image-audio-video",
+      "skill": "obul-genbase",
+      "description": "AI video generation with Sora 2, xAI Grok Imagine, and GPT Image",
+      "homepage": "https://www.genbase.fun"
+    },
+    {
+      "name": "orac",
+      "category": "security-risk",
+      "skill": "obul-orac",
+      "description": "Prompt injection scanning, code vulnerability auditing",
+      "homepage": "https://orac-safety.orac.workers.dev"
+    },
+    {
+      "name": "blackswan",
+      "category": "security-risk",
+      "skill": "obul-blackswan",
+      "description": "Real-time risk intelligence, market safety signals, precursor detection",
+      "homepage": "https://x402.blackswan.wtf"
+    },
+    {
+      "name": "stableenrich",
+      "category": "lead-enrichment",
+      "skill": "obul-stableenrich",
+      "description": "People and company enrichment, LinkedIn scraping, email verification, social profiles",
+      "homepage": "https://stableenrich.dev"
+    },
+    {
+      "name": "brand-dev",
+      "category": "lead-enrichment",
+      "skill": "obul-brand-dev",
+      "description": "Brand development intelligence, company signals, and competitive analysis",
+      "homepage": "https://brand.dev"
+    },
+    {
+      "name": "coresignal",
+      "category": "lead-enrichment",
+      "skill": "obul-coresignal",
+      "description": "B2B contact data, company employee directories, recruitment intelligence",
+      "homepage": "https://coresignal.com"
+    },
+    {
+      "name": "openmart",
+      "category": "lead-enrichment",
+      "skill": "obul-openmart",
+      "description": "Local business search, enrichment, and lead intelligence for 30M+ businesses",
+      "homepage": "https://openmart.ai"
+    },
+    {
+      "name": "predictleads",
+      "category": "lead-enrichment",
+      "skill": "obul-predictleads",
+      "description": "Company intelligence with job openings, news events, financing events, technology detections",
+      "homepage": "https://predictleads.com"
+    },
+    {
+      "name": "sixtyfour",
+      "category": "lead-enrichment",
+      "skill": "obul-sixtyfour",
+      "description": "Build custom research agents to enrich people and company data with real-time signals",
+      "homepage": "https://sixtyfour.ai"
+    },
+    {
+      "name": "tomba",
+      "category": "lead-enrichment",
+      "skill": "obul-tomba",
+      "description": "Email finding and verification API, discover company technologies",
+      "homepage": "https://tomba.io"
+    },
+    {
+      "name": "precip",
+      "category": "weather-data",
+      "skill": "obul-precip",
+      "description": "Hyperlocal weather data with site-specific rainfall, temperature, humidity, wind, soil moisture",
+      "homepage": "https://precip.ai"
+    },
+    {
+      "name": "apollo",
+      "category": "lead-enrichment",
+      "skill": "obul-apollo",
+      "description": "People and company enrichment, search, and prospecting with 270M+ contacts database",
+      "homepage": "https://apollo.io"
+    },
+    {
+      "name": "dome",
+      "category": "blockchain-defi",
+      "skill": "obul-dome",
+      "description": "Prediction market data from Polymarket, Kalshi, sports markets, crypto prices",
+      "homepage": "https://dome.ai"
+    },
+    {
+      "name": "hunter",
+      "category": "lead-enrichment",
+      "skill": "obul-hunter",
+      "description": "Email finder, verifier, domain search, and company enrichment",
+      "homepage": "https://hunter.io"
+    },
+    {
+      "name": "jina",
+      "category": "web-search",
+      "skill": "obul-jina",
+      "description": "Fast multilingual web search and SERP results",
+      "homepage": "https://jina.ai"
+    },
+    {
+      "name": "nano-banana",
+      "category": "image-audio-video",
+      "skill": "obul-nano-banana",
+      "description": "Image generation with Gemini 2.5 Flash and Gemini 3 Pro",
+      "homepage": "https://nanobanana.ai"
+    },
+    {
+      "name": "nano-banana-2",
+      "category": "image-audio-video",
+      "skill": "obul-nano-banana-2",
+      "description": "Image generation with Gemini 3.1 Flash Image",
+      "homepage": "https://nanobanana.ai"
+    },
+    {
+      "name": "logo",
+      "category": "lead-enrichment",
+      "skill": "obul-logo",
+      "description": "Company logo and brand search by domain",
+      "homepage": "https://logo.dev"
+    },
+    {
+      "name": "parallel",
+      "category": "web-search",
+      "skill": "obul-parallel",
+      "description": "Web research, content extraction, FindAll entity discovery for AI agents",
+      "homepage": "https://parallel.ai"
+    },
+    {
+      "name": "perplexity",
+      "category": "web-search",
+      "skill": "obul-perplexity",
+      "description": "AI-powered search with citations, chat completions, deep research",
+      "homepage": "https://perplexity.ai"
+    },
+    {
+      "name": "tavily",
+      "category": "web-search",
+      "skill": "obul-tavily",
+      "description": "Real-time search, web crawling, content extraction, comprehensive research",
+      "homepage": "https://tavily.com"
+    },
+    {
+      "name": "tavus",
+      "category": "image-audio-video",
+      "skill": "obul-tavus",
+      "description": "AI-powered video generation and conversational video interfaces",
+      "homepage": "https://tavus.io"
+    },
+    {
+      "name": "textbelt",
+      "category": "infrastructure",
+      "skill": "obul-textbelt",
+      "description": "SMS messaging API without account configuration",
+      "homepage": "https://textbelt.com"
+    },
+    {
+      "name": "searchapi",
+      "category": "web-search",
+      "skill": "obul-searchapi",
+      "description": "Real-time SERP scraping for Google, YouTube, Amazon, eBay, 100+ platforms",
+      "homepage": "https://www.searchapi.io"
+    },
+    {
+      "name": "valyu",
+      "category": "web-search",
+      "skill": "obul-valyu",
+      "description": "AI-powered web search, content extraction, deep research with proprietary sources",
+      "homepage": "https://valyu.ai"
+    },
+    {
+      "name": "zai",
+      "category": "image-audio-video",
+      "skill": "obul-zai",
+      "description": "GLM models for chat, translation, image/video generation, web search",
+      "homepage": "https://zhipuai.cn"
+    }
+  ]
+}
